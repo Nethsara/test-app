@@ -95,7 +95,7 @@
     function vibratePrimary() {
       // A simple single buzz (e.g., 200ms)
       if ("vibrate" in navigator) {
-        navigator.vibrate(100);
+        navigator.vibrate(30);
       } else {
         alertNotSupported();
       }
@@ -104,7 +104,7 @@
     function vibrateSecondary() {
       // Slightly longer single buzz (e.g., 300ms)
       if ("vibrate" in navigator) {
-        navigator.vibrate(50);
+        navigator.vibrate(10);
       } else {
         alertNotSupported();
       }
@@ -113,7 +113,7 @@
     function vibrateGhost() {
       // A short repeating pattern: 100ms vibrate, 50ms pause, 100ms vibrate
       if ("vibrate" in navigator) {
-        navigator.vibrate([100, 50, 100]);
+        navigator.vibrate([100, 500, 100, 500, 50, 500, 10, ]);
       } else {
         alertNotSupported();
       }
