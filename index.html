@@ -95,7 +95,7 @@
     function vibratePrimary() {
       // A simple single buzz (e.g., 200ms)
       if ("vibrate" in navigator) {
-        navigator.vibrate(200);
+        navigator.vibrate(100);
       } else {
         alertNotSupported();
       }
@@ -104,7 +104,7 @@
     function vibrateSecondary() {
       // Slightly longer single buzz (e.g., 300ms)
       if ("vibrate" in navigator) {
-        navigator.vibrate(300);
+        navigator.vibrate(50);
       } else {
         alertNotSupported();
       }
